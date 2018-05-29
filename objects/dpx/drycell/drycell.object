@@ -1,0 +1,55 @@
+{
+  "objectName" : "oiodrycell",
+  "rarity" : "Common",
+  "description" : "A dry cell ofers high output rates, but low energy storage",
+  "shortdescription" : "Dry Cell",
+  "race" : "generic",
+  "price" : 500,
+  "printable" : false,
+
+  "apexDescription" : "A simple dry cell.",
+  "avianDescription" : "This stores electricity for later use.",
+  "floranDescription" : "Cellssss!",
+  "glitchDescription" : "Energised. A dry cell.",
+  "humanDescription" : "This'll keep me powered!",
+  "hylotlDescription" : "A crude storage device.",
+  "novakidDescription" : "Who needs electricity anyhow?",
+
+  "inventoryIcon" : "drycellicon.png",
+  "orientations" : [
+    {
+      "leftImage" : "drycell.png:<color>.<frame>?flipx",
+      "rightImage" : "drycell.png:<color>.<frame>",
+
+      
+      "imagePosition" : [-8, -8],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "animation" : "drycell.animation",
+  "animationParts" : {
+    "cell" : "drycell.png"
+  },
+  "animationPosition" : [-8, -8],
+
+
+  "scripts" : [ "/objects/dpx/battery.lua" ],
+  "scriptDelta" : 20,
+
+  "inputNodes" : [ [-1, 1] ],
+  "outputNodes" : [ [1, 1] ],
+
+
+
+  "dpx" : {
+    "maxStore" : 1000,
+    "inputNodes" : [ 0 ],
+    "outputNodes" : [ 0 ],
+    "maxOutput" : 5000
+  }
+}

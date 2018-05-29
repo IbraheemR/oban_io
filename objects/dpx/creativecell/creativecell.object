@@ -1,0 +1,36 @@
+{
+  "objectName" : "oiocreativecell",
+  "rarity" : "Legendary",
+  "description" : "Contains infinite energy",
+  "shortdescription" : "Creative Cell",
+  "race" : "generic",
+  "price" : 1000000,
+  "printable" : false,
+
+  "inventoryIcon" : "creativecell.png",
+  "orientations" : [
+    {
+      "image" : "creativecell.png",
+      "direction": "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    },
+    {
+      "image" : "creativecell.png",
+      "direction": "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "scripts" : [ "creativecell.lua" ],
+  "scriptDelta" : 20,
+
+  "outputNodes" : [ [0, 0] ],
+
+  "dpx" : {
+    "outputNodes" : [ 0 ] // We dont need this per say, but will keep it for semantics
+  }
+}

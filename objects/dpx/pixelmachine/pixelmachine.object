@@ -1,0 +1,48 @@
+{
+  "objectName" : "oiopixelmachine",
+  "rarity" : "Uncommon",
+  "description" : "Slows doen dynamised pixels and makes them solid. Only 1% efficient - 100 dPx => 1 Pixel",
+  "shortdescription" : "Pixel Decelerator",
+  "race" : "generic",
+  "price" : 500,
+  "printable" : false,
+
+  "apexDescription" : "A pixel maker.",
+  "avianDescription" : "This generates pixels from electricity.",
+  "floranDescription" : "Pixsssssselssss!",
+  "glitchDescription" : "Calmed. Pixels slowly cystalsie out of seemingly nothing.",
+  "humanDescription" : "This'll make me rich!",
+  "hylotlDescription" : "An advanced machine.",
+  "novakidDescription" : "Who needs electricity anyhow?",
+
+  "inventoryIcon" : "pixelmachineicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "pixelmachine.png:<color>.<frame>",
+
+      "imagePosition" : [-16, -16],
+      "frames" : 1,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "animation" : "pixelmachine.animation",
+  "animationPosition" : [-16, -16],
+  "animationParts" : {
+    "crank" : "pixelmachine.png"
+  },
+
+  "scripts" : [ "pixelmachine.lua" ],
+  "scriptDelta" : 20,
+
+  "inputNodes" : [ [-2, 0] ],
+
+  "dpx" : {
+    "maxStore" : 100,
+    "inputNodes" : [ 0 ]
+  },
+
+  "dpxPixelRatio" : 100
+}

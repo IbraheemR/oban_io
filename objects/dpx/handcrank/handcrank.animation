@@ -1,0 +1,45 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "crankState" : {
+        "default" : "active",
+        "states" : {
+          "idle" : {
+            "frames" : 1,
+            "cycle" : 1
+          },
+          "active" : {
+            "frames" : 11,
+            "cycle" : 0.5,
+            "mode" : "transition",
+            "transition" : "idle"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "crank" : {
+        "properties" : {
+          "centered" : false
+        },
+
+        "partStates" : {
+          "crankState" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:default.default"
+              }
+            },
+
+            "active" : {
+              "properties" : {
+                "image" : "<partImage>:default.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

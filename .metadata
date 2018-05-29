@@ -1,0 +1,10 @@
+{
+    "author" : "OBAN",
+    "description" : "Adds automatic item manipulation and crafting automation to the game",
+    "friendlyName" : "OBAN's IO Mod",
+    "link" : "http://www.ibraheemrodrigues.com",
+    "name" : "O-I/O",
+    "requires" : [],
+    "steamContentId" : "",
+    "version" : "1.0"
+  }

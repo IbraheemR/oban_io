@@ -1,0 +1,64 @@
+{
+  "objectName" : "oiohandcrank",
+  "rarity" : "Common",
+  "description" : "A hand crank. Generative!",
+  "shortdescription" : "Hand Crank Generator",
+  "race" : "generic",
+  "price" : 500,
+  "printable" : false,
+
+  "apexDescription" : "A hand crank generator.",
+  "avianDescription" : "This generates electricity from mechanical effort.",
+  "floranDescription" : "Crankssss!",
+  "glitchDescription" : "Exhausted. A hand crank generator.",
+  "humanDescription" : "This'll work for basic consumptiion needs!",
+  "hylotlDescription" : "A crude generation device.",
+  "novakidDescription" : "Who needs electricity anyhow?",
+
+  "inventoryIcon" : "handcrankicon.png",
+  "orientations" : [
+    {
+      "image" : "handcrank.png:<color>.<frame>",
+      "flipImages" : true,
+      "direction" : "left",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+
+      "spaces" : [ [0, 0], [0, 1], [1, 0], [1, 1] ]
+    },
+    {
+      "image" : "handcrank.png:<color>.<frame>",
+      "direction" : "right",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+
+      "spaces" : [ [0, 0], [0, 1], [1, 0], [1, 1] ]
+    }
+  ],
+
+  "animation" : "handcrank.animation",
+  "animationParts" : {
+    "crank" : "handcrank.png"
+  },
+
+  "scripts" : [ "handcrank.lua" ],
+  "scriptDelta" : 20,
+
+  "outputNodes" : [ [0, 0] ],
+
+
+  "dpx" : {
+    "maxStore" : 40,
+    "generation": 20,
+    "maxOutput" : 100,
+    "outputNodes" : [ 0 ]
+  }
+}

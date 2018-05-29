@@ -1,0 +1,21 @@
+{
+  "objectName" : "oioextractionnode",
+  "rarity" : "Common",
+  "description" : "A metal sign with a biohazard symbol.",
+  "shortdescription" : "Biohazard Sign",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 60,
+  "printable" : false,
+
+  "inventoryIcon" : "extractionnode.png",
+  "orientations" : [
+    {
+      "image" : "extractionnode.png",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}
